@@ -2,26 +2,21 @@ import React, { Component } from "react";
 import classNames from "classnames";
 
 // using material-ui
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import { withStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
+// import Paper from "@material-ui/core/Paper";
 
 // using material-kit-react
 import Footer from "components/Footer";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
+
 // import Button from "@material-ui/core/Button";
 // import IconButton from "@material-ui/core/IconButton";
 
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
-
-import Carousel from "react-slick";
-import LocationOn from "@material-ui/icons/LocationOn";
+// import Carousel from "react-slick";
+// import LocationOn from "@material-ui/icons/LocationOn";
 
 import mainPageStyle from "./mainPageStyle.jsx";
 import imagesStyles from "assets/jss/material-kit-react/imagesStyles.jsx";
@@ -144,8 +139,8 @@ const projects = [
     tags: ["Android", "데이터 시각화", "UXUI 기획", "1인 개발"],
     role: "1인 개발 (기획, 개발, 유지, 관리)",
     detail_role: [
-      "처음으로 안드로이드 앱을 개발, 하나의 서비스를 런칭하고, 유저에게 피드백을 받아 서비스 개선,유지,관리 경험.",
-      "유저는 정말 다양하고, UX의 약간의 차이가 유저의 경험을 굉장히 좌우함. 유저입장에서 서비스를 만드는 어려움과 중요성을 느낌."
+      "처음으로 안드로이드 앱을 개발, 하나의 서비스를 런칭하고, 유저에게 피드백을 받아 서비스 개선, 유지, 관리 경험",
+      "유저입장에서 서비스를 만드는 어려움과 중요성 체득 : 유저는 정말 다양하고, UX의 약간의 차이가 유저의 경험을 굉장히 좌우함"
     ],
     techstack: ["Android Studio(java)", "D3.js", "SQLite"],
     why: "",

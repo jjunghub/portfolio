@@ -7,11 +7,9 @@ import { withStyles } from "@material-ui/core";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 
-import { cardTitle, cardLink, korean } from "assets/jss/material-kit-react.jsx";
+import { cardTitle } from "assets/jss/material-kit-react.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
-import image1 from "assets/img/bg.jpg";
-import Badge from "components/Badge/Badge.jsx";
 import MyGallery from "components/MyGallery";
 import Tooltip from "@material-ui/core/Tooltip";
 import projectCardStyle from "./projectCardStyle.jsx";
@@ -24,9 +22,6 @@ const style = {
   cardTitle
 };
 
-const subtitleStyle = {
-  marginBottom: "0px"
-};
 // name: "Cerebro.Scholar",
 // when: "2018.06 ~",
 // subname: "학술 동향 분석 서비스",

@@ -25,8 +25,11 @@ function Footer({ ...props }) {
     <footer className={footerClasses}>
       <div className={classes.container}>
         <div className={classes.right}>
-          &copy; 2019, simple portfolio made by jjung <br /> using awesome
-          front-end source{" "}
+          &copy; 2019, simple portfolio made by{" "}
+          <a href="https://github.com/jjunghub/portfolio" target="_blank">
+            jjung
+          </a>{" "}
+          <br /> using awesome front-end source{" "}
           <a href="https://material-ui.com/" target="_blank">
             Material UI
           </a>

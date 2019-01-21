@@ -10,7 +10,12 @@ const mainPageStyle = {
     zIndex: "3"
   },
   mainRaised: {
-    margin: "30px 20px 20px",
+    "@media (max-width: 768px)": {
+      margin: "30px 0px 0px"
+    },
+    "@media (min-width: 768px)": {
+      margin: "30px 20px 20px"
+    },
     // margin: "-60px 30px 0px",
     borderRadius: "6px",
     boxShadow:
@@ -42,14 +47,14 @@ const mainPageStyle = {
   },
   category: {
     textTransform: "uppercase",
-    marginTop: "3rem",
-    marginBottom: "0.2rem",
-    fontSize: "1.6rem",
+    marginTop: "3em",
+    marginBottom: "0.2em",
+    fontSize: "1.6em",
     fontWeight: "500"
   },
   button: {
     marginLeft: "20px",
-    fontSize: "1.0rem",
+    fontSize: "1.0em",
     paddingLeft: "4px",
     paddingRight: "4px"
   }

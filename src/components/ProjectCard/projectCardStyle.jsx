@@ -13,15 +13,25 @@ const projectCardStyle = {
     marginTop: "0.5rem"
   },
   subtitle: {
-    fontSize: "1.1rem",
     fontWeight: "500",
     color: "#666",
     marginTop: "0px",
     marginBottom: "0px",
-    lineHeight: "1.1em"
+    lineHeight: "1.2em",
+    "@media (max-width: 768px)": {
+      fontSize: "1.0rem"
+    },
+    "@media (min-width: 768px)": {
+      fontSize: "1.2rem"
+    }
   },
   tags: {
-    fontSize: "1.2rem",
+    "@media (max-width: 768px)": {
+      fontSize: "1.0rem"
+    },
+    "@media (min-width: 768px)": {
+      fontSize: "1.2rem"
+    },
     marginRight: "0.5rem"
   },
   ptitle: {
