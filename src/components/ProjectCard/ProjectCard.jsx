@@ -57,27 +57,10 @@ class ProjectCard extends Component {
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={12}>
           <Card>
-            {this.summary ? (
-              <CardBody>
-                {info.cover_img && (
-                  <img
-                    className={classes.imgCardTop}
-                    src={jpgs(info.cover_img)}
-                    alt="Card-img-cap"
-                  />
-                )}
-                <h3 className={classes.title}>{info.name}</h3>
-                {info["tags"].map(d => (
-                  <span className={classes.tags} color="info">
-                    {"#" + d + " "}
-                  </span>
-                ))}
-                <h4 className={classes.subtitle}>{info.subname}</h4>
-              </CardBody>
-            ) : (
-              <GridContainer justify="center" style={{ fontSize: "1.1rem" }}>
-                <GridItem xs={12} sm={12} md={12}>
-                  <CardBody>
+            <GridContainer justify="center" style={{ fontSize: "1.1rem" }}>
+              <GridItem xs={12} sm={12} md={12}>
+                <CardBody>
+                  {!this.summary && (
                     <div style={{ textAlign: "right" }}>
                       {/* 기간 */}
                       <span>{info.when}</span>
@@ -91,22 +74,27 @@ class ProjectCard extends Component {
                         ))}
                       </div>
                     </div>
+                  )}
 
-                    <h3 className={classes.title}>{info.name}</h3>
-                    {info["tags"].map(d => (
-                      <span className={classes.tags} color="info">
-                        {"#" + d + " "}
-                      </span>
-                    ))}
-                    <h4 className={classes.subtitle}>{info.subname}</h4>
-                  </CardBody>
-                  <CardBody>
-                    {info.imgs && (
-                      <div style={{ overflow: "scroll" }}>
-                        <MyGallery imgs_big={info.imgs_big} imgs={info.imgs} />
-                      </div>
-                    )}
-                  </CardBody>
+                  <h3 className={classes.title}>{info.name}</h3>
+                  {info["tags"].map(d => (
+                    <span className={classes.tags} color="info">
+                      {"#" + d + " "}
+                    </span>
+                  ))}
+                  <h4 className={classes.subtitle}>{info.subname}</h4>
+                </CardBody>
+                <CardBody>
+                  {info.imgs && (
+                    <div
+                      style={{ overflow: "scroll" }}
+                      onClick={this.toggleDetails}
+                    >
+                      <MyGallery imgs_big={info.imgs_big} imgs={info.imgs} />
+                    </div>
+                  )}
+                </CardBody>
+                {!this.summary && (
                   <CardBody>
                     {/* 무엇 */}
                     {info.object !== "" && (
@@ -170,9 +158,10 @@ class ProjectCard extends Component {
                     )}
                     {info.slideshare}
                   </CardBody>
-                </GridItem>
-              </GridContainer>
-            )}
+                )}
+              </GridItem>
+            </GridContainer>
+
             <Tooltip
               title={this.summary ? "show details" : "show less"}
               placement="top"

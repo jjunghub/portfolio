@@ -53,25 +53,28 @@ const projects = [
     cover_img: "./cs_viz.png",
     imgs_big: [
       {
-        path: "./cs_recommendTags.gif",
-        cap: "[gif] recommend related academic tags"
+        path: "./cs_analysis_downsize.gif",
+        cap: "Data analysis/visualization result examples"
       },
       {
-        path: "./cs_viz.png",
-        cap: "capture of data visualization result examples"
+        path: "./cs_recommendTags_downsize.gif",
+        cap: "[gif] recommend related academic tags"
       },
       { path: "./cs_timetrend.gif", cap: "[gif] interactive line chart" },
       {
-        path: "./cs_keyword.gif",
+        path: "./cs_keyword_downsize.gif",
         cap: "[gif] interactive keyword network analysis"
       },
       {
-        path: "./cs_researcher.gif",
+        path: "./cs_researcher_downsize.gif",
         cap: "[gif] list up impactful researchers"
       },
-      { path: "./cs_papers.gif", cap: "[gif] list up impactful papers" },
-      { path: "./proto1.gif", cap: "[gif] data viz prototype 1/2" },
-      { path: "./proto2.gif", cap: "[gif] data viz prototype 2/2" },
+      {
+        path: "./cs_papers_downsize.gif",
+        cap: "[gif] list up impactful papers"
+      },
+      { path: "./proto1_downsize.gif", cap: "[gif] data viz prototype 1/2" },
+      { path: "./proto2_downsize.gif", cap: "[gif] data viz prototype 2/2" },
       {
         path: "./tagdict1.png",
         cap: "construct the refined academic tagset - 1/3"
@@ -85,7 +88,7 @@ const projects = [
         cap: "construct the refined academic tagset - 3/3"
       }
     ],
-    imgs: ["./cs_recommendTags.png", "./cs_viz.png"],
+    imgs: ["./cs_hmm2.png"],
     slideshare: (
       <GridItem xs={12}>
         <iframe
@@ -140,7 +143,7 @@ const projects = [
     role: "1인 개발 (기획, 개발, 유지, 관리)",
     detail_role: [
       "처음으로 안드로이드 앱을 개발, 하나의 서비스를 런칭하고, 유저에게 피드백을 받아 서비스 개선, 유지, 관리 경험",
-      "유저입장에서 서비스를 만드는 어려움과 중요성 체득 : 유저는 정말 다양하고, UX의 약간의 차이가 유저의 경험을 굉장히 좌우함"
+      "유저입장에서 서비스를 만드는 어려움과 중요성 경험 : 유저는 정말 다양하고, UX의 약간의 차이가 유저의 경험을 굉장히 좌우함"
     ],
     techstack: ["Android Studio(java)", "D3.js", "SQLite"],
     why: "",
@@ -248,13 +251,13 @@ const projects = [
     link: "",
     cover_img: "./yummy_4.png",
     imgs_big: [
-      { path: "./yummy_1.png", cap: "he" },
-      { path: "./yummy_2.png", cap: "he" },
-      { path: "./yummy_3.png", cap: "he" },
-      { path: "./yummy_4.png", cap: "he" },
-      { path: "./yummy_5.png", cap: "he" },
-      { path: "./yummy_6.png", cap: "he" },
-      { path: "./yummy_7.png", cap: "he" }
+      { path: "./yummy_4.png", cap: "classifier building process" },
+      { path: "./yummy_1.png", cap: "why" },
+      { path: "./yummy_2.png", cap: "goal" },
+      { path: "./yummy_3.png", cap: "category mission" },
+      { path: "./yummy_5.png", cap: "making train dataset" },
+      { path: "./yummy_6.png", cap: "face detection" },
+      { path: "./yummy_7.png", cap: "recognition try" }
     ],
     imgs: ["./yummy_4.png"],
     slideshare: (

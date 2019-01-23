@@ -85,6 +85,7 @@ class MyGallery extends Component {
       currentItem: obj.index,
       lightboxIsOpen: true
     });
+    // event.stopPropagation();
   }
   closeLightbox() {
     this.setState({

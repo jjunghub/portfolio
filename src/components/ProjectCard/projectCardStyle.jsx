@@ -10,7 +10,7 @@ const projectCardStyle = {
   title: {
     fontWeight: "500",
     marginBottom: "0.5rem",
-    marginTop: "0.5rem"
+    marginTop: "0rem"
   },
   subtitle: {
     fontWeight: "500",
