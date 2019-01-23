@@ -54,13 +54,16 @@ const projects = [
     imgs_big: [
       {
         path: "./cs_analysis_downsize.gif",
-        cap: "Data analysis/visualization result examples"
+        cap: "[gif] data analysis/visualization result examples"
       },
       {
         path: "./cs_recommendTags_downsize.gif",
         cap: "[gif] recommend related academic tags"
       },
-      { path: "./cs_timetrend.gif", cap: "[gif] interactive line chart" },
+      {
+        path: "./cs_timetrend_downsize.gif",
+        cap: "[gif] interactive line chart"
+      },
       {
         path: "./cs_keyword_downsize.gif",
         cap: "[gif] interactive keyword network analysis"
